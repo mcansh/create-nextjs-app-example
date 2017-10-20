@@ -1,10 +1,16 @@
 import React from 'react';
-import Document from '../layouts/Document';
+import Hello from '../components/Hello';
 
 const Index = () => (
-  <Document>
-    <h1>create-nextjs-app-example</h1>
-  </Document>
+  <div>
+    <Hello />
+    <style jsx global>{`
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+    `}</style>
+  </div>
 );
 
 export default Index;
